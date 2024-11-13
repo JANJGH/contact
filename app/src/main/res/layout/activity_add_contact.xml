@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".AddContactActivity"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/userId"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toTopOf="@+id/contactName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
+
+    <EditText
+        android:id="@+id/contactName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:textColor="@color/blue"
+        android:background="@drawable/shape_text_field"
+        android:hint="Username"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/contactNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="15dp"
+        android:hint="Number"
+        android:textColor="@color/blue"
+        android:background="@drawable/shape_text_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactName" />
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        android:text="Create"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/contactNumber"
+        app:layout_constraintStart_toStartOf="@+id/contactNumber"
+        app:layout_constraintTop_toBottomOf="@+id/contactNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
